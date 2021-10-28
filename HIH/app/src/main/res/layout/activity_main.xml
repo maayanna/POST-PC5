@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/trackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="55dp"
+        android:text="@string/start_track"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/latitudeView"
+        />
+
+    <TextView
+        android:id="@+id/latitudeView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="16dp"
+        android:text=""
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@+id/trackButton"
+        />
+
+
+    <TextView
+        android:id="@+id/longitudeView"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text=""
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/latitudeView"
+        app:layout_constraintBottom_toTopOf="@+id/accuracyView"/>
+
+    <TextView
+        android:id="@+id/accuracyView"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text=""
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/longitudeView"/>
+
+    <Button
+        android:id="@+id/setHome"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/accuracyView"
+        android:gravity="center"
+        android:text="@string/set_home"
+        android:layout_marginTop="55dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/homeLocationView"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text=""
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/setHome"/>
+
+    <Button
+        android:id="@+id/clearHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/homeLocationView"
+        android:gravity="center"
+        android:text="@string/clear_home"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/colorPrimaryDark"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

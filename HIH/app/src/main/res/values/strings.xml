@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HONEYIMHOME</string>
+    <string name="start_track"> START TRACKING LOCATION </string>
+    <string name="stop_track"> STOP TRACKING LOCATION </string>
+    <string name="set_home"> SET HOME LOCATION </string>
+    <string name="clear_home"> CLEAR HOME LOCATION </string>
+</resources>
